@@ -14,5 +14,7 @@ class Post < ApplicationRecord
 
   self.per_page = 9
 
+  extend FriendlyId
+  friendly_id :title, use: :slugged
 
 end

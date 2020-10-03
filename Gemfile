@@ -31,6 +31,7 @@ gem 'simple_form'
 gem 'faker'
 gem 'table_print'
 gem 'will_paginate'
+gem 'friendly_id'
 #####
 
 # Reduces boot times through caching; required in config/boot.rb
