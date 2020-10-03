@@ -1,0 +1,20 @@
+<div class="container">
+  <% @posts.each do |post| %>
+    <div class="row">
+      <div class="card mb-6">
+            <img src="https://picsum.photos/1600/150/?random">      
+      </div>
+      <h5 class="card-body">
+        <%= link_to post.title, post %>
+      </h5>
+      <p class="card-text">
+      <%= post.body.to_plain_text.truncate_words(25) %>
+      </p>
+      <p class="card-text">
+      <small class="text-muted">
+			<%= post.updated_at.strftime("%A, %B %e, %Y") %> by <%= post.user.username %> | <%= pluralize(post.views, "View") %> | 0 commentaires
+      </small>
+      </p>
+    </div>
+  <% end %>
+</div>
