@@ -28,6 +28,9 @@ gem 'image_processing', '~> 1.2'
 ##### Custon Gem Area
 gem 'devise'
 gem 'simple_form'
+gem 'faker'
+gem 'table_print'
+gem 'will_paginate'
 #####
 
 # Reduces boot times through caching; required in config/boot.rb
